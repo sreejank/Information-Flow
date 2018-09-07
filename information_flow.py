@@ -155,10 +155,7 @@ def getFlowGrouping(mat):
 							flow+=nx.maximum_flow_value(G,node1,node2,capacity='weight')
 							#flow+=nx.maximum_flow_value(H,str(node1)+'_in',str(node2)+'_out',capacity='weight')
 			connectome[i,j]=flow
-			"""if len(G.nodes())>0:
-													connectome[i,j]=flow/len(G.nodes())
-												else:
-													connectome[i,j]=0.0"""
+			
 	return connectome
 
 
